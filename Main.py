@@ -1,11 +1,5 @@
 #Otherside Picnic
-#Central hub that
-
-#Characters
-#Soarow
-
-#Toriko
-
+#Central hub(Contains: HP, )
 
 #Enemies
 # Kunekune
