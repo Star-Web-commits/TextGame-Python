@@ -1,3 +1,0 @@
-This is a project based on my yr 11 assessment where we had to create a game
-    the game will start out being a text based game, and branch out by adding more visual components until
-    it's something that I'm happy with.
