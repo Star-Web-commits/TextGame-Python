@@ -6,7 +6,7 @@ game_running = True
 game_results = []
 
 #Player
-Soarow = Player()
+Soarow = Player("Name")
 
 Toriko = Player()
 
