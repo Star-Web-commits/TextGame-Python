@@ -12,12 +12,18 @@ class Player:
         self.Heal = Heal
         self.Status = Status
 
+    def status(self, target)->None:
+        
+        pass
+
 class ForthKind:
     def __init__(self, Name: str, Health: int, Attack: int, Status: str):
         self.Name = Name
         self.Health = Health
         self.Attack = Attack
         self.Status = Status
+
+
 
 
 #Enemies
@@ -27,6 +33,8 @@ Kunekune = ForthKind()
 
 
 # Lady Hasshaku
+Lady_Hasshaku = ForthKind()
+
 
 # 
 
