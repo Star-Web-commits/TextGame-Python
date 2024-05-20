@@ -7,8 +7,13 @@ class Player:
         self.Status = Status
 
 
-    def status(self, Target) -> None:
+    def status(self, Target, Anxious, Scared, Frozen, Fear, Angry) -> str:
         self.Target = Target
+        self.Anxious = Anxious
+        self.Scared = Scared
+        self.Frozen = Frozen
+        self.Fear = Fear
+        self.Angry = Angry
         pass
 
 class ForthKind:
