@@ -1,6 +1,6 @@
 # TextGame
 A project based on a game idea from yr 11, start out as text based and will slowly add visual elements. I think I'm going to follow the example of games like:
-    > Santuary
+    > Sanctuary
     > Genesis
 
 # Languages
