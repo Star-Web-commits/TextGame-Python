@@ -1,5 +1,5 @@
 class Player:
-    def __init__(self, Name: str, Health:int, Attack: int, Heal: int, Status: str):
+    def stats(self, Name: str, Health:int, Attack: int, Heal: int, Status: str):
         self.Name = Name
         self.Health = Health
         self.Attack = Attack
@@ -7,7 +7,7 @@ class Player:
         self.Status = Status
 
 
-    def status(self, Target, Anxious, Scared, Frozen, Fear, Angry) -> str:
+    def status(self, Target, Anxious: bool, Scared: bool, Frozen: bool, Fear: bool, Angry: bool) -> str:
         self.Target = Target
         self.Anxious = Anxious
         self.Scared = Scared
@@ -17,8 +17,11 @@ class Player:
         pass
 
 class ForthKind:
-    def __init__(self, Name: str, Health: int, Attack: int, Status: str):
+    def monsterStats(self, Name: str, Health: int, Attack: int, Status: str):
         self.Name = Name
         self.Health = Health
         self.Attack = Attack
         self.Status = Status
+
+    def damage(self, ):
+        pass
