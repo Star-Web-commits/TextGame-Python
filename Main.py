@@ -4,23 +4,19 @@ from Character import Player, ForthKind
 
 game_running = True
 Menu = True
-
+Play = True
 game_results = []
 
-#Player
-Soarow = Player("Name")
-
-Toriko = Player()
-
+#characters
+Soarow = Player("Soarow", 150, 20, 30, Sane)
+Toriko = Player("Toriko", 200, 40, 15, Sane)
 
 #Enemies
 # Kunekune
-Kunekune = ForthKind()
-
-
+Kunekune = ForthKind("Kunekune", 1000, 20, Bored)
 
 # Lady Hasshaku
-Lady_Hasshaku = ForthKind()
+Lady_Hasshaku = ForthKind("Lady Hasshaku", 12000, 30, Venegeful)
 
 
 # Main game Loop
@@ -48,4 +44,6 @@ while game_running:
 
         elif Choice == "4":
             pass
+
+    
 
