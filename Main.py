@@ -1,6 +1,6 @@
 #Otherside Picnic inspired game
 from random import randint
-from Character import Player, ForthKind
+from Character import *
 
 game_running = True
 Menu = True
@@ -8,15 +8,15 @@ Play = True
 game_results = []
 
 #characters
-Soarow = Player("Soarow", 150, 20, 30, Sane)
-Toriko = Player("Toriko", 200, 40, 15, Sane)
+Soarow = Player("Soarow", 150, 28, 30, Status= 'Sane')
+Toriko = Player("Toriko", 200, 56, 15, Status='Sane')
 
 #Enemies
 # Kunekune
-Kunekune = ForthKind("Kunekune", 1000, 20, Bored)
+Kunekune = ForthKind("Kunekune", 1000, 20, Status= 'Bored')
 
 # Lady Hasshaku
-Lady_Hasshaku = ForthKind("Lady Hasshaku", 12000, 30, Venegeful)
+Lady_Hasshaku = ForthKind("Lady Hasshaku", 12000, 30, Status= 'Venegeful')
 
 
 # Main game Loop
