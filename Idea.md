@@ -71,48 +71,48 @@ Your breakdown is thorough and well-organized! Let's delve into the details a bi
 By addressing these aspects comprehensively, you'll be well-equipped to embark on the development journey of your text-based game inspired by "Otherside Picnic"! Let me know if you need further assistance or have specific questions along the way.
 
 # Maybe puesdocode for the game
-// Define variables for protagonist's powers and resources
-power1 = initialPower1Value
-power2 = initialPower2Value
-resource = initialResourceValue
+    // Define variables for protagonist's powers and resources
+    power1 = initialPower1Value
+    power2 = initialPower2Value
+    resource = initialResourceValue
 
-// Game loop
-while gameInProgress:
-    // Display game state and options to the player
-    displayGameState(power1, power2, resource)
-    displayOptions()
+    // Game loop
+    while gameInProgress:
+        // Display game state and options to the player
+        displayGameState(power1, power2, resource)
+        displayOptions()
 
-    // Player input
-    userInput = getPlayerInput()
+        // Player input
+        userInput = getPlayerInput()
 
-    // Process player action
-    if userInput == "usePower1":
-        if resource >= power1Cost:
-            // Use power 1
-            power1Effect()
-            resource -= power1Cost
+        // Process player action
+        if userInput == "usePower1":
+            if resource >= power1Cost:
+                // Use power 1
+                power1Effect()
+                resource -= power1Cost
+            else:
+                displayMessage("Not enough resources to use Power 1.")
+        else if userInput == "usePower2":
+            if resource >= power2Cost:
+                // Use power 2
+                power2Effect()
+                resource -= power2Cost
+            else:
+                displayMessage("Not enough resources to use Power 2.")
+        else if userInput == "explore":
+            // Handle exploration event
+            explorationEvent()
+        else if userInput == "rest":
+            // Restore resources
+            resource += restAmount
+            displayMessage("You rest and recover some resources.")
         else:
-            displayMessage("Not enough resources to use Power 1.")
-    else if userInput == "usePower2":
-        if resource >= power2Cost:
-            // Use power 2
-            power2Effect()
-            resource -= power2Cost
-        else:
-            displayMessage("Not enough resources to use Power 2.")
-    else if userInput == "explore":
-        // Handle exploration event
-        explorationEvent()
-    else if userInput == "rest":
-        // Restore resources
-        resource += restAmount
-        displayMessage("You rest and recover some resources.")
-    else:
-        displayMessage("Invalid input. Please try again.")
+            displayMessage("Invalid input. Please try again.")
 
-    // Check for game over conditions
-    if gameOverCondition():
-        displayGameOver()
-        gameInProgress = false
+        // Check for game over conditions
+        if gameOverCondition():
+            displayGameOver()
+            gameInProgress = false
 
-// End of game loop
+    // End of game loop
