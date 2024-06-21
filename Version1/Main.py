@@ -16,7 +16,7 @@ Toriko = Player("Toriko", 200, 56, 15, Status='Sane')
 Kunekune = ForthKind("Kunekune", 1000, 20, Status= 'Bored')
 
 # Lady Hasshaku
-Lady_Hasshaku = ForthKind("Lady Hasshaku", 12000, 30, Status= 'Venegeful')
+Lady_Hasshaku = ForthKind("Lady Hasshaku", 12000, 30, Status= 'Vengeful')
 
 
 # Main game Loop
@@ -31,6 +31,7 @@ while game_running:
 
         if Choice == "1":
             #clear() #this will clear any other save file
+            
             pass
             #the players characters are to be inisalised here
             # I'll also add in a file so there can be a save state to pick up and put down the game

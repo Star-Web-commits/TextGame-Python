@@ -30,7 +30,7 @@ map = [["plains",   "plains",   "plains",   "plains",   "forest", "mountain",   
 y_len = len(map)-1
 x_len = len(map[0])-1
 
-biom = {
+biome = {
     "plains": {
         "t": "PLAINS",
         "e": True},
@@ -104,7 +104,7 @@ def save():
         str(HP),
         str(ATK),
         str(pot),
-        str(elix),
+        str(elixer),
         str(gold),
         str(x),
         str(y),
