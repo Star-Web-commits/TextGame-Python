@@ -10,7 +10,7 @@ class Status(Enum):
     SCARY = auto()
     INJURED = auto()
     BORED = auto()
-    VENEGEFUL = auto()
+    VENGEFUL = auto()
 
 
 class Player:
@@ -97,7 +97,7 @@ class ForthKind:
         Damage = self.damage
         if self.status_conditions[Status.BORED] or self.status_conditions[Status.SCARY]:
             Damage = int(Damage * 0.8)
-        if self.status_conditions[Status.AGITATED] or self.status_conditions[Status.INJURED] or self.status_conditions[Status.VENEGEFUL]:
+        if self.status_conditions[Status.AGITATED] or self.status_conditions[Status.INJURED] or self.status_conditions[Status.VENGEFUL]:
             Damage = int(Damage * 1.2)
 
         return Damage
